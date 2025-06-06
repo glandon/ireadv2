@@ -1,0 +1,49 @@
+
+.iread_fuscr #box1,
+.iread_fuscr #discuss,
+.iread_fuscr .dk-bg,
+.iread_fuscr .dk-side,
+.toplayer-shop, 
+.iread_fuscr #readEndDiv,
+.iread_fuscr .commonbox1,
+.iread_fuscr #header,
+.iread_fuscr #toolbar,
+.iread_fuscr .page_ad,
+.iread_fuscr .boxright,
+.iread_fuscr .activelist,
+.iread_fuscr .footer,
+.iread_fuscr #commentDiv {
+    display: none !important;
+}
+
+.iread_main {
+    margin-top: 30px;
+}
+
+.iread_fuscr .layout02 {
+    display: flex !important;
+    justify-content: center;
+}
+
+.iread_fuscr .layout02 .boxleft {
+    margin-right: 0 !important;
+}
+
+.iread_fuscr .outer_page {
+    border: 0 !important;
+}
+
+/* .iread_fuscr #boxleft {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+} */
+
+@media print {
+
+    .iread_fuscr .inner_page {
+       width: 100% !important;
+       height: unset !important;
+    }
+}

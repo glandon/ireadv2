@@ -1,0 +1,117 @@
+*[ireader='iread_main'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    min-height: calc(100vh + 35rem);
+    z-index: 1054;
+    padding: 40px 12.5% !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+*[ireader='iread_main'] > * {
+    margin: 0;
+    padding: 0;
+}
+
+*[ireader='inner_title'] {
+    display: block !important;
+    width: 100% !important;
+    z-index: var(--ipage-z-index) !important;
+    margin: 0 auto !important;
+    padding-top: 8% !important;
+    max-width: var(--ipage-max-width) !important;
+}
+
+*[ireader='title'] {
+    display: block !important;
+    width: 100% !important;
+    z-index: var(--ipage-z-index) !important;
+    background: white !important;
+    padding: 7% 10% 20px 10% !important;
+    box-sizing: border-box;
+    max-width: var(--ipage-max-width) !important;
+    border-radius: 4px 4px 0 0 !important;
+    margin-bottom: -6px
+}
+
+*[ireader='article'] {
+    display: block !important;
+    width: 100% !important;
+    z-index: var(--ipage-z-index);
+    background: white !important;
+    margin: 0 auto !important;
+    padding: 0% 10% 7% !important;
+    max-width: var(--ipage-max-width) !important;
+    border-radius: 4px !important;
+    box-sizing: border-box;
+    float: unset !important;
+}
+
+*[ireader='article_no_title'] {
+    display: block !important;
+    width: 100% !important;
+    z-index: var(--ipage-z-index);
+    background: white !important;
+    margin: 0 auto !important;
+    padding: 5% 10% 7% !important;
+    max-width: var(--ipage-max-width) !important;
+    border-radius: 4px !important;
+    box-sizing: border-box;
+    float: unset !important;
+}
+
+*[ireader='asarticle'] {
+    display: block !important;
+    width: 100% !important;
+    z-index: var(--ipage-z-index);
+    background: white !important;
+    margin: 10px auto !important;
+    padding: 2% 10% 7% !important;
+    max-width: var(--ipage-max-width) !important;
+    border-radius: 4px !important;
+    box-sizing: border-box;
+    float: unset !important;
+}
+
+*:has(*[ireader='iread_main']) {
+    width: 100% !important;
+    position:static !important;
+}
+
+.news-box:has(*[class^='pc-ad']) {
+    display: none !important;
+}
+
+@media print {
+    .iread_fullscr aside,
+    .iread_fullscr .zan,
+    .iread_fullscr .share,
+    .iread_fullscr .relevant-recommend,
+    *[ireader='asarticle']{
+        display: none !important;
+    }
+   
+    *[ireader='iread_main'],
+    *[ireader='title'],
+    *[ireader='article_no_title'],
+    *[ireader='article']{
+        padding-left: 8% !important;
+        padding-right: 8% !important;
+    }
+
+    *[ireader='title'],
+    *[ireader='article_no_title'],
+    *[ireader='article']{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        print-color-adjust:exact;
+        -webkit-print-color-adjust:exact;
+    }
+
+    *::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,54 @@
+iframe,
+ins,
+footer+div,
+footer+div+div {
+    display: none !important;
+}
+
+.iread_main .jiansu_content_container section ~ * {
+       display: none !important;
+}
+
+header+div {
+    background-color: unset !important;
+}
+
+#note-fixed-ad-container,
+.iread_main .ireader_root_div~div {
+    display: none !important;
+}
+
+.iread_main .ireader_root_div~div:has(div[role=dialog]) {
+    display: block !important;
+}
+
+.jiansu_content_container {
+    position: absolute;
+    width: 75%;
+    padding: 40px 0 30px 0;
+    margin: 0 auto !important;
+    max-width: var(--ipage-max-width);
+}
+
+.jiansu_content_container section {
+    left: 0;
+    padding: 3% 10%;
+}
+
+@media print {
+    .jiansu_content_container {
+        padding: 0 4%;
+        width: 100%;
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+    .ant-back-top,
+    #note-page-comment,
+    article~div,
+    .jiansu_content_container section:not(:first-child) {
+        display: none !important;
+    }
+    @page {
+        margin: 40px 0;
+    }
+}

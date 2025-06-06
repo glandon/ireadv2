@@ -1,0 +1,77 @@
+
+.iread_main .post_columnad_top,
+.iread_main .post_columnad_btm,
+.iread_main .post_crumb,
+.iread_main .post_side,
+.iread_main .post_top {
+    display: none !important;
+}
+
+.common_ad_item,
+.ad_module,
+.iread_main .ns-side-totop,
+.iread_main .newsapp-qrcode,
+.iread_main #js_N_NTES_wrap,
+.iread_main #netease_search,
+.iread_main .sy_car_nav,
+.iread_main .post_columnad_mid,
+.iread_main .N-nav-bottom {
+    display: none !important;
+}
+
+.iread_main .post_content,
+.iread_main .post_recommends{
+    padding-left: 0;
+}
+
+.iread_main {
+    min-width: 0 !important;
+}
+
+.iread_main .post_main {
+    width: 100% !important;
+    background-color: white;
+    margin: 40px 0;
+    padding-top: 8%;
+    padding-bottom: 40px;
+    border-radius: 4px;
+}
+
+.iread_main .post_main > * {
+    padding: 0 10%;
+}
+
+.iread_main .post_main iframe,
+.iread_capture .post_recommends {
+    display: none;
+}
+
+.iread_main #container,
+.iread_main #contain {
+    width: 75% !important;
+    max-width: var(--ipage-max-width);
+}
+
+@media print {
+    .iread_main .post_recommends,
+    .iread_main .video-wrapper,
+    .iread_main #instant-news,
+    .iread_main .p-w-top,
+    .iread_main .post_next,
+    .iread_main .post_recommends {
+        display: none !important;
+    }
+
+    .iread_main #container,
+    .iread_main #contain {
+        width: 100% !important;
+    }
+
+    .iread_main .post_main {
+        margin: 0;
+    }
+
+    .iread_main .post_main > * {
+        padding: 0 8%;
+    }
+}

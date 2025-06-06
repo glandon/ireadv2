@@ -1,0 +1,22 @@
+
+.m-text * {
+    display: block !important;
+}
+
+.m-text1 * {
+    display: block !important;
+}
+
+.m-text2 * {
+    display: block !important;
+}
+
+.bot h3::before {
+    content: "爱读v2助力->";
+    color: blue;
+}
+
+.container ~ *,
+divz {
+    display: none !important;
+}

@@ -1,0 +1,139 @@
+ins {
+    display: none !important;
+}
+
+.toolbar-advert {
+    display: none !important;
+}
+
+.iread_main .recommend-box,
+.iread_main #recommend-list-box {
+    display: none !important;
+}
+
+.iread_main div[id^="dmp_ad"] {
+    display: none !important;
+}
+
+.iread_main #commentBox ~ * {
+    max-width: var(--ipage-max-width);
+    margin: 0 auto !important;
+}
+
+.adsbygoogle,
+.csdn-side-toolbar,
+.feed-Sign-span {
+    display: none;
+}
+
+#blogColumnPayAdvert,
+#asideHotArticle,
+#asideCategory,
+#asideArchive,
+#footerRightAds {
+    display: none;
+}
+
+.iread_main .blog-footer-bottom,
+.iread_main #recommendNps,
+.iread_hide_toolbar,
+#toolBarBox,
+.comment-box {
+    display: none !important;
+}
+
+.iread_main .hide-article-box,
+.iread_main .hide-article-pos {
+    max-width: var(--ipage-max-width);
+    margin: 0 auto !important;
+}
+
+.iread_blog_content_box {
+    padding: 6% 10% !important;
+    border-radius: 4px !important;
+    max-width: var(--ipage-max-width);
+    margin: 0 auto !important;
+}
+
+.iread-aside {
+    display: none !important;
+}
+
+.iread_main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 40px 12.5% !important;
+    width: 100% !important;
+}
+
+.iread_body {
+    /* background: #e3e3e3 !important; */
+    min-width: auto;
+}
+
+#content_views pre,
+#content_views pre code {
+    -webkit-touch-callout: unset !important;
+    -webkit-user-select: unset !important;
+    -khtml-user-select: unset !important;
+    -moz-user-select: unset !important;
+    -ms-user-select: unset !important;
+    user-select: unset !important;
+}
+
+.blog_container_aside div:has(ins[class~=adsbygoogle]) {
+    display: none !important;
+}
+
+@media print {
+    .recommend-box,
+    #recommendNps {
+        display: none !important;
+    }
+    @page {
+        margin: 40px 0;
+    }
+    .iread_blog_content_box {
+        padding: 0% !important;
+    }
+
+    /* csdn */
+    .blog-footer-bottom,
+    .template-box,
+    .comment-box {
+        display: none;
+    }
+    /* csdn */
+    .blog_container_aside,
+    #csdn-toolbar {
+        display: none;
+    }
+    /* csdn ad*/
+    #dmp_ad_58 {
+        display: none;
+    }
+    /* csdn title */
+    /* .article-title-box {
+        text-align: center;
+    } */
+
+    #mainBox main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 0;
+        width: 100% !important;
+    }
+    .left.main>div {
+        width: 90% !important;
+        margin: 30px auto;
+    }
+
+    .iread_blog_content_box {
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+}

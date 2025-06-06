@@ -1,0 +1,129 @@
+iframe {
+    display: none !important;
+}
+
+.adsbygoogle {
+    display: none !important;
+}
+
+.iread_main .post-title :first-child {
+    display: none !important;
+}
+
+.iread_main .post-title div:last-of-type {
+    display: none !important;
+}
+
+.main-left {
+    left: 0;
+    z-index: 1001;
+    margin-top: 10px;
+}
+
+.iread_main .content p {
+    color: #000;
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 12px;
+    max-width: var(--ipage-max-width);
+}
+
+.article {
+    width: 100%;
+    margin: auto;
+    display: table;
+    max-width: var(--ipage-max-width);
+}
+
+.iread_main .right_box {
+    margin-top: 11px;
+}
+
+.iread_main .download_boxs,
+.iread_main .related_article {
+    display: none !important;
+}
+
+.iread_main ~ .main-right,
+.iread_main .footer,
+.iread_main .dianzan,
+.iread_main .ai_box,
+.iread_main .chat_ai {
+    display: none !important;
+}
+
+.iread_content ~ *,
+.excellent_articles_box {
+    display: none !important;
+}
+
+.iread_main {
+    position: absolute !important;
+    top: 0;
+    width: 100% !important;
+    z-index: 1000;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    left: 0;
+    min-height: calc(100vh + 35rem);
+}
+
+.iread_main h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #967346;
+}
+
+.iread_content {
+    width: 75%;
+    margin: 40px auto 40px;
+    background: white;
+    border-radius: 4px;
+    padding: 5% 8% !important;
+    box-sizing: border-box;
+}
+
+.iread_main h1 {
+    line-height: 36px;
+    font-size: 27px;
+    text-align: center;
+    margin: 10px 0px 8px;
+    color: #000;
+    font-weight: bold;
+}
+
+.iread_main .info {
+    line-height: 24px;
+    padding: 8px 0;
+    color: #C5C5C5;
+    overflow: hidden;
+    margin: 2px auto;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+@media print {
+    .main-left>* {
+        width: 100% !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header,
+    .conttop_te,
+    .sidebar,
+    .previous,
+    .main-right,
+    .in_header,
+    .in_header~p {
+        display: none !important;
+    }
+    .main-left {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .iread_content {
+        width: 100% !important;
+        padding: 4% 8% !important;
+    }
+}

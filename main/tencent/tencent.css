@@ -1,0 +1,81 @@
+.iread_main {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 40px 12.5% !important;
+    min-height: calc(100vh + 35rem);
+    box-sizing: border-box;
+    z-index: 1100;
+}
+
+.iread_main section,
+.iread_main .mod-article-content {
+    padding: 7% 10%;
+    border-radius: 4px;
+    max-width: var(--ipage-max-width);
+    margin: 0 auto 10px !important;
+}
+
+.iread_full .cdc-suspend-pill,
+.iread_main .recommend,
+.iread_main .cdc-header,
+.iread_main .cdc-crumb,
+.cdc-sticky-header,
+.iread_main .cdc-footer,
+.iread_main .cdc-tag__list,
+.iread_main .cdc-comment,
+.iread_main .mod-relevant,
+.iread_main .main-cnt,
+.iread_main .mod-content__statement,
+.iread_main .cdc-widget-global {
+    display: none;
+}
+
+.iread_main .J-articlePanel,
+.iread_main .mod-article-content {
+    box-shadow: none;
+    border-width: 0;
+}
+
+.iread_main .cdc-global__main {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.iread_main .cdc-responsive-layout {
+    margin: 0 !important;
+}
+
+.iread_main img {
+    max-width: 100%;
+}
+
+.iread_full .cdc-directory,
+.iread_full .mod-operations__widget,
+.iread_full .mod-operations__menu,
+.iread_full .cdc-layout__side,
+.iread_full .mod-sticky-footer {
+    display: none !important;
+}
+
+@media print {
+    .iread_main {
+        width: 100% !important;
+        padding: 4% 0 !important;
+        box-sizing: content-box;
+    }
+
+    .iread_main section,
+    .iread_main .mod-article-content {
+        padding: 6% 14%;
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+
+    @page {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

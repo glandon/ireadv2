@@ -1,0 +1,13 @@
+iframe {
+    display: none !important;
+}
+
+.adsbygoogle {
+    display: none !important;
+}
+
+#topads0,
+#topads,
+#ad_before_content {
+    display: none !important;
+}

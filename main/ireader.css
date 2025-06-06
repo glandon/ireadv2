@@ -1,0 +1,265 @@
+
+:root {
+    --ipage-web-logo: none;
+    --ipage-default-color: white;
+    --ipage-z-index: 1054;
+}
+
+/* iread toolbar */
+.ful_scr_toolbar {
+    position: fixed;
+    right: 1%;
+    top: 40px;
+    color: darkslategrey;
+    border-radius: 50%;
+    background: rgba(176, 196, 222, 0.5);
+}
+
+.ful_scr_toolbar_notful {
+    position: fixed;
+    right: 1%;
+    top: 40px;
+    border-radius: 50%;
+    color: darkslategrey;
+    background: rgba(176, 196, 222, 0.5);
+}
+
+.logo-wrapper {
+    position: fixed;
+    color: darkslategrey;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ful_scr_toolbar a,
+.ful_scr_toolbar_notful a {
+    font: 14px/1.5 tahoma, arial;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    line-height: 23px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo_default, .logo_default a,
+.ful_scr_toolbar_notful a,
+.ful_scr_toolbar a {
+    width: 25px;
+    height: 25px;
+    user-select: none;
+}
+
+.logo_none {
+    display: none;
+}
+
+.logo_fo, .logo_fo a, .logo_gif, .logo_gif a{
+    width: 10vmin;
+    height: auto;
+}
+
+.logo_muyu, .logo_muyu a{
+    width: auto;
+    height: 7vmin;
+}
+
+.logo_default, .logo_static, .logo_static a{
+    width: 4vmin;
+    height: auto;
+}
+
+.ful_scr_toolbar a:hover,
+.ful_scr_toolbar_notful a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.ful_scr_toolbar_notful ~ div {
+    position:initial;
+    display: none;
+}
+
+.ireader_root_div {
+    position: absolute;
+    z-index: 9999999;
+}
+
+#ireader_donate_icon {
+    position: fixed;
+    right: 20px;
+    top: 68px;
+}
+
+#ireader_donate_icon img {
+    width: 88px;
+    border-radius: 50%;
+}
+
+.ireader_btn {
+    color: whitesmoke;
+    position: fixed;
+    right: 1%;
+    width: 25px;
+    height: 25px;
+    font-size: medium;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
+}
+
+#ireader_print {
+    top: 68px;
+}
+
+#ireader_config_btn {
+    top: 94px;
+}
+
+#ireader_fullscr_btn {
+    top: 120px;
+}
+
+#ireader_edit {
+    top: 146px;
+}
+
+#ireader_snapshot {
+    top: 172px;
+    font-size: small;
+}
+
+.ireader_config:hover {
+    color: burlywood;
+}
+
+.result_hide_ads {
+    display: none !important;
+}
+
+/* baidu ads */
+#wrapper_wrapper #container #content_left div[class^='_'] {
+    position: fixed;
+    left: -9999px;
+}
+
+#wrapper_wrapper #container #content_right {
+    display: none !important;
+}
+
+#wrapper_wrapper #container .nums_text::before {
+    content: '爱读❤️ 已为您过滤部分广告～ ';
+}
+
+/* mp4ba, webmp4 */
+#HMcoupletDivleft,
+#HMcoupletDivright,
+#HMRichBox,
+#HMcoupletDivright,
+#HMcoupletDivleft {
+    display: none !important;
+}
+
+.adsbygoogle {
+    display: none !important;
+}
+
+div[class*='sinaads'] {
+    scale: 0 !important;
+    opacity: 0 !important;
+}
+
+/* for print special layout */
+@media print {
+    .ireader_root_div {
+        display: none;
+    }
+    body {
+        min-width: auto !important;
+        background: white !important;
+    }
+    .iread_main {
+        padding: 0 !important;
+        background: white !important;
+    }
+}
+
+@keyframes logo-animation{
+    0%{
+        transform:scale(1)
+    }
+    50%{
+        transform:scale(1.2)
+    }
+    100%{
+        transform:scale(1)
+    }
+}
+
+@keyframes gongde-animation{
+    0%{
+        color:transparent
+    }
+    20%{
+        color:darkcyan;
+    }
+    60%{
+        color:lightsalmon;
+    }
+    100%{
+        color:goldenrod;
+        transform:translate(0px, -60px);
+        display:none
+    }
+}
+
+
+@keyframes help-animation{
+    0%{
+        color:transparent
+    }
+    20%{
+        color:darkcyan;
+    }
+    100%{
+        color:darkorchid;
+        transform:translate(0px, -40px);
+        display:none
+    }
+}
+
+.ireader_root_div .logo-text{
+    color:transparent;
+    font-size:small;
+    user-select: none;
+    position: fixed;
+    text-align: center;
+    min-width: 80px !important;
+    font-family: Arial,sans-serif;
+}
+
+.ireader_root_div .help-text{
+    color:transparent;
+    font-size: 10px;
+    user-select: none;
+    position: fixed;
+    text-align: center;
+    min-width: 80px !important;
+    font-family: Arial,sans-serif;
+}
+
+.ireader_root_div .logo-wrapper{
+    position: fixed;
+    max-height: 100px;
+    min-width: 80px !important;
+    text-align: center;
+    user-select: none;
+}
+
+.ireader_root_div img{
+    cursor:pointer;
+    pointer-events: none;
+    user-select: none;
+    margin-top: 20px;
+}

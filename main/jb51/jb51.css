@@ -1,0 +1,148 @@
+
+#logo, .logom, .logor, .igoods {
+    display: none !important;
+}
+
+.jb51code {
+    user-select:auto !important;
+}
+
+.iread_main .xbtj,
+.iread_main .clearfix {
+    display: none !important;
+}
+
+.iread_wrapper {
+    padding-bottom: 0 !important;
+}
+
+.iread_fullscr {
+    position: absolute !important;
+    top: 0;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+.iread_main #navCategory:first-child span{
+    left: 50% !important;
+}
+
+.jb51code {
+    max-width: 100% !important;
+}
+
+.iread_main {
+    width: 100% !important;
+    padding: 40px 0% !important;
+    box-sizing: border-box;
+    min-height: calc(100vh + 35rem);
+}
+
+.iread_container {
+    padding: 20px auto;
+    width: auto !important;
+}
+
+.iread_wrapper {
+    position: absolute !important;
+    top: 0;
+    width: 100% !important;
+}
+
+.iread_main .main-left {
+    width: 100% !important;
+    background: none !important;
+    float: none !important;
+    padding: 0px !important;
+}
+
+.iread_main_right, .iread_search, .iread_breadcrumb {
+    display: none !important;
+}
+
+.iread_topbar, .iread_header, .iread_submenu {
+    display: none !important;
+    min-width: auto !important;
+    width: auto !important;
+}
+
+.iread_article {
+    padding: 5% 7% !important;
+    border-radius: 4px;
+    max-width: var(--ipage-max-width);
+    margin: 0 auto !important;
+    width: 75% !important;
+    box-sizing: border-box;
+}
+
+.iread_article_print {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.iread_container > * {
+    display: none !important;
+}
+
+.iread_container #main {
+    display: block !important;
+    background: none !important;
+}
+
+.pt10 .clearfix, #footer, #nav, #submenu{
+    display: none !important;
+    min-width: auto !important;
+}
+
+iframe {
+    display: none !important;
+}
+
+#BAIDU_DUP_fp_wrapper {
+    display: none !important;
+}
+
+.lbd {
+    display: none !important;
+}
+
+#content img {
+    max-width: 100% !important;
+}
+
+#content a img,
+ins,.rshare {
+    display: none !important;
+}
+
+#article:before {
+    content: none;
+}
+
+@media print {
+    @page {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .iread_article {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .iread_jb51_content {
+        width: 100% !important;
+        background: white !important;
+    }
+    .iread_article .art_xg {
+        display: none;
+    }
+    .iread_main .main-left {
+        width: 100% !important;
+        float: none !important;
+        padding: 0px;
+    }
+    .iread_article{
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+}

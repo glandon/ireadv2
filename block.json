@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "*://cdn-file-ssl-wan.ludashi.com/*",
+            "resourceTypes": ["main_frame", "sub_frame", "image"]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "*://pp.chuzushijian.cn/*",
+            "resourceTypes": ["main_frame", "sub_frame", "image"]
+        }
+    }
+]

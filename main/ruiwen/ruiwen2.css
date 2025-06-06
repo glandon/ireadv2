@@ -1,0 +1,46 @@
+iframe {
+    display: none !important;
+}
+
+.adsbygoogle {
+    display: none !important;
+}
+
+.post-title :first-child {
+    display: none !important;
+}
+
+.post-title div:last-of-type {
+    display: none !important;
+}
+
+.main-left {
+    left: 0;
+    padding: 15px 0 0 0;
+    z-index: 1001;
+    margin-top: 10px;
+}
+
+.article {
+    width: 100%;
+    margin: auto;
+    display: table;
+    max-width: var(--ipage-max-width);
+}
+
+.right_box {
+    margin-top: 11px;
+}
+
+.download_boxs {
+    display: none !important;
+}
+
+.footer,
+.ai_box {
+    display: none !important;
+}
+
+.excellent_articles_box {
+    display: none !important;
+}

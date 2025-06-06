@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="plugin/options.css" />
+    <link rel="stylesheet" type="text/css" href="plugin/calendar.css" />
+</head>
+
+<body>
+    <div id="headerbar">
+        <div id="qrcode"></div>
+        <div id="header">
+            <a id="brand" target="_blank" href='https://handbooks.cn:18080/iread/'>爱·读</a>
+        </div>
+        <div id="description">QQ:709663594 - 简单·高效·随心</div>
+    </div>
+
+    <div style="margin: 2px 7% 0 7%">
+        <div id="notification">♨ 感谢使用，你的喜爱就是最大的支持！</div>
+    </div>
+
+    <div id="main" style="margin: 1% 7% 3%;display: flex;">
+        <div style="flex:3;background-color: white;padding: 20px;">
+            <div id="bgcolor_setting">
+                <label>1. 背景设置(刷新生效)</label>
+                <div id="buttonDiv"></div>
+            </div>
+            <div style="margin-bottom: 1em; margin-top: 1em;">
+                <label style="text-decoration: underline;">访问次数</label>
+                <h1 id="visit_count" style="color: green;"></h1>
+            </div>
+            <div id="logo_setting">
+                <label>2. 切换LOGO</label>
+                <div id="logo_options" class="webopt">
+                    <input type="radio" id="none" value="none" name="logo">不显示<br/>
+                    <input type="radio" id="guohui" value="images/guohui.png" name="logo">国徽<br/>
+                    <input type="radio" id="cat" value="images/cat1.gif" name="logo">可爱小猫<br/>
+                    <input type="radio" id="kitty" value="images/kitty.gif" name="logo">Kitty猫<br/>
+                    <input type="radio" id="fo" value="images/fo.png" name="logo">佛<br/>
+                    <input type="radio" id="muyu" value="images/muyu.png" name="logo">木鱼<br/>
+                </div>
+            </div>
+            <div id="max_width_setting">
+                <label>3. 最大宽度</label>
+                <div id="max_width_options" class="webopt">
+                    <input type="radio" id="width1000" value="1000px" name="maxwidth">1000px <br/>
+                    <input type="radio" id="width1200" value="1200px" name="maxwidth" >1200px <br/>
+                    <input type="radio" id="width1400" value="1400px" name="maxwidth">1400px<br/>
+                    <input type="radio" id="width1600" value="1600px" name="maxwidth">1600px<br/>
+                    <input type="radio" id="width1800" value="1800px" name="maxwidth">1800px<br/>
+                </div>
+            </div>
+            <div class="web_enable_setting">
+                <label>4. 启用开关(启用/自动)</label>
+                <div id="web_enable_list" class="webopt">
+                </div>
+            </div>
+            <div id="friends_link">
+                <label>友情链接</label>
+                <ul id="friends_div" class="webopt">
+                    <li><a href="https://weread.qq.com/" target="_blank">微信读书</a></li>
+                    <li><a href="https://book.douban.com/" target="_blank">豆瓣读书</a></li>
+                    <li><a href="http://www.360doc.com/" target="_blank">360个人图书馆</a></li>
+                    <li><a href="https://www.jiumodiary.com/" target="_blank">鸠摩搜索</a></li>
+                    <li><a href="http://www.banshujiang.cn/" target="_blank">搬书匠</a></li>
+                    <li><a href="https://sobooks.net/" target="_blank">书柜</a></li>
+                    <li><a href="https://www.qidian.com/" target="_blank">起点中文</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="today">
+                </div>
+                <div class="line-tip">
+                    <strong>座位朝向：<br>
+                    </strong>面向<span class="direction_value"></span>写程序，BUG 最少。
+                </div>
+                <div class="line-tip">
+                    <strong>今日宜饮：<br></strong><span class="drink_value"></span>
+                </div>
+                <div class="line-tip">
+                    <strong>女神亲近指数：</strong><span class="goddes_value"></span>
+                </div>
+            </div>
+            <div id="girls_link">
+                <label>随机美图</label>
+                <img src="https://api.suyanw.cn/api/sjmv.php"/>
+            </div>
+        </div>
+        <div style="flex:9;margin-left: 2%;">
+            <div id="recommend_app">
+                <a id="hot_section_title" style="padding: 10px" class="select">热点新闻</a>
+                <a id="app_section_title" style="padding: 10px">实用推荐</a>
+                <!-- <a id="sim_section_title" style="padding: 10px">式奋努力</a> -->
+                <a id="blog_section_title" style="padding: 10px">来算一卦</a>
+                <hr style="border:0.5px solid lightgray">
+                <ul id="hot_news_div"></ul>
+                <ul id="app_div"></ul>
+                <!-- <ul id="sim_hard_div">
+                    <li><a>假装编译</a></li>
+                    <li><a>假装开会</a></li>
+                    <li><a>假装学习</a></li>
+                </ul> -->
+                <ul id="yaogua_div">
+                    <li style="width:100%">
+                        <div id="yaogua_head">
+                            卜卦结果分为两部分：主卦和变爻
+                        </div>
+                        <div class="coins">
+                            <div id="coin1" class="coin">
+                                <div class="coin_head"></div>
+                                <div class="coin_tail"></div>
+                            </div>
+                            <div id="gua_result_list_l" class="gua_result_list">
+                                <ul style="width:4em;">
+                                    <li></li><li></li><li></li>
+                                </ul>
+                            </div>
+                            <div id="coin2" class="coin">
+                                <div class="coin_head"></div>
+                                <div class="coin_tail"></div>
+                            </div>
+                            <div id="gua_result_list_r" class="gua_result_list">
+                                <ul style="width:4em;">
+                                    <li></li><li></li><li></li>
+                                </ul>
+                            </div>
+                            <div id="coin3" class="coin">
+                                <div class="coin_head"></div>
+                                <div class="coin_tail"></div>
+                            </div>
+                        </div>
+                        <div id="gua_btn_div">
+                            <a id="yaogua" style="color:#a0ab02;font-weight: bold">摇☯卦</a>
+                        </div>
+                        <div>
+                            <p style="font-size: xx-small;text-align: center;">摇六次，即可知当下之事。</p>
+                        </div>
+                        <div id="sogua_div" style="display: none;">
+                            <a id="sogua" target="_blank" style="color:#30a3ae;"></a>
+                        </div>
+                    </li>
+                    <div>
+                        <a id="gua_help">?</a>
+                    </div>
+                </ul>
+            </div>
+            <!-- <div id="reads_list">
+                <label style="padding: 10px 0 10px 10px;">佳作赏析</label>
+                <hr style="border:0.5px solid lightgray">
+                <ul id="reads_div">
+                </ul>
+            </div> -->
+            <div id="book_list">
+                <label style="padding: 10px 0 10px 10px;">推荐图书</label>
+                <hr style="border:0.5px solid lightgray">
+                <ul id="book_div">
+                </ul>
+            </div>
+            <div id="know_list">
+                <label style="padding: 10px 0 10px 10px;">推荐阅读</label>
+                <hr style="border:0.5px solid lightgray">
+                <ul id="know_div">
+                </ul>
+            </div>
+            <div id="events_list">
+                <label style="padding: 10px 0 10px 10px;">随便翻翻</label>
+                <hr style="border:0.5px solid lightgray">
+                <ul id="events_div"></ul>
+            </div>
+            <div id="events_pub">
+                <label>我也发一贴</label>
+                <button id="pubevents">发布</button>
+                <ul>
+                    <div id="preview_events_left">
+                        <input id="event_title_input" style="width: 100%; margin-bottom: 4px;" 
+                        type="text" placeholder="总的有个标题"/>
+                        <textarea id="event_content_input" type="text" style="min-height: 6.6em;width: 100%;" 
+                            placeholder="随便发点啥，1分钟后即可随机刷到～"></textarea>
+                        <input id="event_cover_input" style="width: 100%; margin-bottom: 4px;" 
+                            type="url" placeholder="封面"/>
+                        <input id="event_link_input" style="width: 100%; margin-bottom: 4px;" 
+                        type="url" placeholder="网址要带着https/http/magnet哦～"/>
+                    </div>
+                    <li style="padding-right: 5%;float: right;">
+                        <a id="preview_events_a" style="text-align:center;float:right;" href="#">预览</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="bottom_tip">
+        禁止不文明行为，理性使用，杜绝滥用～
+    </div>
+    <dialog id="idialog">
+        <button id="idialogclose">☒</button>
+        <div id="idialogbody">
+            <h2 id="idialogtitle">爱读</h2>
+            <p id="idialogcontent">没有什么内容～</p>
+            <p id="idialogdate">不知道什么日子</p>
+            <a id="idialoglink" target="_blank">☞注意外部链接安全</a>
+        </div>
+    </dialog>
+    <div id="snapshotmask" style="display: none;">
+        <div id="snapshotdiv">
+            <div style="font-size: 10pt;margin-top: 2%;">鼠标右键保存/复制图片
+            <a id="snapshotbtn" style="cursor:pointer;text-decoration: underline;">关闭</a>
+            </div>
+            <img id="snapshot" style="width: 60%"/>
+        </div>
+    </div>
+</body>
+<script src="plugin/network.js"></script>
+<script src="plugin/utils.js"></script>
+<script src="plugin/colors.js"></script>
+<script src="plugin/switches.js"></script>
+<script src="plugin/events.js"></script>
+<script src="plugin/yaogua.js"></script>
+<script src="plugin/calendar.js"></script>
+<script src="options.js"></script>
+</html>

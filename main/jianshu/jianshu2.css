@@ -1,0 +1,14 @@
+.note-bottom .seo-recommended-notes,
+.note-bottom .main,
+.recommend-note .meta,
+.recommend-note .list {
+    width: inherit !important;
+}
+
+.note {
+    padding-top: 0 !important;
+}
+
+.ireader_root_div~div {
+    display: none !important;
+}

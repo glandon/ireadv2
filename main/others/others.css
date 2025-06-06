@@ -1,0 +1,46 @@
+iframe {
+    display: none !important;
+}
+
+#footer,
+.adsbygoogle {
+    display: none !important;
+}
+
+#title_top + div:has(ins[class=adsbygoogle]),
+.post-content div:has(ins[class=adsbygoogle]) {
+    display: none !important;
+}
+
+.post-title div:last-of-type {
+    display: none !important;
+}
+
+.main-left {
+    left: 0;
+    padding: 15px 0 0 0;
+    z-index: 1001;
+    background-color: whitesmoke;
+}
+
+.article {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    display: table;
+}
+
+.main-left>* {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+}
+
+.download_boxs {
+    display: none !important;
+}
+
+.footer,
+.ai_box {
+    display: none !important;
+}

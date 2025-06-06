@@ -1,0 +1,82 @@
+.iread_fulscr .recommended-entry-list{
+    padding: 0 4% 4% !important;
+    margin-top: -6px;
+}
+
+.iread_fulscr .recommended-list-title-wrapper {
+    margin-top: 20px;
+}
+
+.iread_fulscr article {
+    padding: 7% 10% !important;
+}
+
+.iread_fulscr #comment-box {
+    padding: 40px 6% !important;
+    margin-top: 20px;
+}
+
+.iread_fulscr .article-area,
+.iread_fulscr .recommended-area {
+    width: 100% !important;
+    border-radius: 4px;
+    max-width: var(--ipage-max-width) !important;
+    margin: 0 auto !important;
+}
+
+.iread_fulscr .column-view {
+    margin-top: 0px !important;
+}
+
+.iread_capture .recommended-area {
+    display: none;
+}
+
+.iread_fulscr .main-container,
+.iread_fulscr .view-container {
+    max-width: 100% !important;
+}
+
+.iread_fulscr #juejin {
+    padding: 40px 12.5%;
+}
+
+.iread_fulscr .global-float-banner,
+.iread_fulscr .article-sidebar,
+.iread_fulscr .related-entry-sidebar-block,
+.iread_fulscr .article-catalog,
+.iread_fulscr .extension-banner,
+.iread_fulscr .recommended-links,
+.iread_fulscr .article-suspended-panel,
+.iread_fulscr .category-course-recommend,
+.iread_fulscr .main-header-box {
+    display: none !important;
+}
+
+@media print {
+    .iread_fulscr article {
+        padding: 8% !important;
+        box-sizing: border-box;
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+
+    .iread_fulscr .recommended-area {
+        display: none !important;
+    }
+
+    .iread_fulscr .recommended-entry-list{
+        padding: 0 !important;
+    }
+
+    @page:first {
+        margin: 40px 5% 5%;
+    }
+
+    @page:left {
+        margin: 5%;
+    }
+    @page:right {
+        margin: 5%;
+    }
+}

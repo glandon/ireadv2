@@ -1,0 +1,12 @@
+iframe {
+    display: none !important;
+}
+
+.adsbygoogle {
+    display: none !important;
+}
+
+div[id*="_ads"],
+div#setupad_anchor_970_90 {
+    display: none !important;
+}

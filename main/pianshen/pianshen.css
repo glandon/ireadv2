@@ -1,0 +1,54 @@
+iframe {
+    display: none !important;
+}
+
+div[id*='ads'] {
+    display: none !important;
+}
+
+#topads0,
+#topads,
+#ad_before_content {
+    display: none !important;
+}
+
+.info-sec,
+.footer-sec,
+#header {
+    display: none;
+}
+
+.iread_main .row {
+    max-width: var(--ipage-max-width);
+    margin: 0 auto;
+}
+
+.ireadfullscr .col-md-8 {
+    width: 100%;
+    background-color: white;
+    padding: 5% 10% !important;
+    border-radius: 4px;
+    max-width: var(--ipage-max-width);
+    margin: 40px auto 0 !important;
+}
+
+.iread_main {
+    padding-top: 0;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-bottom: 40px !important;
+}
+
+.iread_main #article_content {
+    max-width: none !important;
+}
+
+.ireadfullscr .col-md-4 {
+    display: none;
+}
+
+@media print {
+    #bottomads~* {
+        display: none;
+    }
+}

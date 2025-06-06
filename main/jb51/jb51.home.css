@@ -1,0 +1,8 @@
+
+.clearfix {
+    display: none !important;
+}
+
+#logo, .logom, .logor, .igoods {
+    display: none !important;
+}

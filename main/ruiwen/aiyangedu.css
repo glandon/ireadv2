@@ -1,0 +1,16 @@
+.aiyang .right-side,
+.aiyang .header,
+.aiyang .sidebar {
+    display: none !important;
+}
+
+.aiyang .iread_content {
+    float: unset;
+}
+
+@media print {
+    .aiyang .time {
+        text-align: center;
+        color: #999;
+    }
+}

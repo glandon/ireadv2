@@ -1,0 +1,35 @@
+iframe {
+    display: none !important;
+}
+
+.ad-site, #sidebar,#top-header {
+    display: none !important;
+}
+
+#menu-box {
+    background: none !important;
+    box-shadow: none !important;
+    border-bottom: 0 !important;
+}
+
+#menu-box.shadow {
+    position: unset !important;
+}
+
+#primary, #content {
+    width: 100% !important;
+}
+
+#main {
+    width: 80% !important;
+    margin: auto;
+}
+
+#main article {
+    border-radius: 4px !important;
+    padding: 40px 10%;
+}
+
+body {
+    padding: 0 !important;
+}

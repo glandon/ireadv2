@@ -1,0 +1,43 @@
+html,
+body {
+    overflow: unset !important;
+}
+
+.layui-layer-shade,
+.modal.fade {
+    display: none !important;
+}
+
+.col-md-3,
+#footer {
+    display: none !important;
+}
+
+.article_banner {
+    width: 100%;
+    top: 60px;
+    background-color: aliceblue;
+    padding-left: 12.5% !important;
+    padding-right: 12.5% !important;
+    z-index: 99999990;
+}
+
+.col-md-9 {
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.row-fluid {
+    background-color: aliceblue !important;
+}
+
+.head_box {
+    z-index: 99999999 !important;
+}
+
+ins,
+h1,
+iframe {
+    display: none !important;
+}

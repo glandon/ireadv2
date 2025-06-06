@@ -1,0 +1,37 @@
+
+#logo, .logom, .logor, .lbd, .igoods {
+    display: none !important;
+}
+
+.pt10 .clearfix, #footer, #nav {
+    display: none !important;
+    min-width: auto !important;
+}
+
+iframe {
+    display: none !important;
+}
+
+#BAIDU_DUP_fp_wrapper {
+    display: none !important;
+}
+
+#main .clearfix {
+    display: none !important;
+}
+
+#content img {
+    max-width: 100% !important;
+}
+
+@media print {
+    /* jb51 */
+    .iread_article {
+        margin: 0 !important;
+    }
+    /* jb51 */
+    .iread_jb51_content {
+        width: 90% !important;
+        background: white !important;
+    }
+}
