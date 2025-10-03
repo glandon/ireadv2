@@ -17,7 +17,7 @@ ins {
 
 .iread_main #commentBox ~ * {
     max-width: var(--ipage-max-width);
-    margin: 0 auto !important;
+    /* margin: 0 auto !important; */
 }
 
 .adsbygoogle,
@@ -37,15 +37,14 @@ ins {
 .iread_main .blog-footer-bottom,
 .iread_main #recommendNps,
 .iread_hide_toolbar,
-#toolBarBox,
-.comment-box {
+#toolBarBox {
     display: none !important;
 }
 
 .iread_main .hide-article-box,
 .iread_main .hide-article-pos {
     max-width: var(--ipage-max-width);
-    margin: 0 auto !important;
+    /* margin: 0 auto !important; */
 }
 
 .iread_blog_content_box {

@@ -149,27 +149,21 @@ body {
 #recommend_app, #events_pub {
     padding: 20px 20px 10px 20px;
 }
-#recommend_app, #events_list, #know_list, #book_list, #reads_list {
+#recommend_app, #events_list, #know_list, #book_list, #reads_list, #girls_list {
     margin-bottom: 20px;
     min-height: 100px;
 }
-#know_list, #events_list, #book_list, #reads_list{
+#know_list, #events_list, #book_list, #reads_list, #girls_list{
     padding: 20px 20px 8px 20px;
     background: white;
 }
-#recommend_app a {
-    cursor: pointer;
+#book_list, #girls_list {
+    border-radius: 4px;
 }
-#know_div li {
-    margin-left: 30px;
-    list-style: decimal;
+#girls_list {
+    margin-bottom: 0;
 }
-#pubevents {
-    margin: 0 1em 1em 0;
-    width: 4em;
-    height: 2em;
-    font-size: smaller;
-}
+
 #idialogcontent {
     text-align: start;
     padding: 0 10px 10px;
@@ -283,30 +277,9 @@ body {
     height: 12px;
     background: beige;
 }
-#events_pub {
-    margin-bottom: 0;
-    padding-left: 4%;
-    padding-bottom: 4%;
-}
-#events_list li p {
-    font-weight: 200;
-    color: darkolivegreen;
-}
 @media (max-width:1099px) {
     body {
         padding: 1px 1%;
-    }
-    #events_list ul li{    
-        width: 20%;
-        margin: 2.5%;
-        }
-    #preview_events_a,
-    #events_div li > a {
-        height: 11em;  
-        width: 9em;  
-    }
-    #preview_events_left {
-        width: 70%;
     }
 }
 
@@ -338,62 +311,7 @@ body {
         margin: 1.6em 2% 3em;
     }
 }
-@media (min-width:1100px) and (max-width:1319px){
-    #events_list ul li{    
-        width: 15%;
-        margin: 2.4%;
-    }
-    #preview_events_a,
-    #events_div li > a {
-        height: 11em;  
-        width: 8em;
-    }
-    #preview_events_left {
-        width: 68%;
-    }
-}
-@media (min-width:1320px) and (max-width:1419px){
-    #events_list ul li{    
-        width: 15%;
-        margin: 2.4%;
-    }
-    #preview_events_a,
-    #events_div li > a {
-        height: 14em;  
-        width: 10em;
-    }
-    #preview_events_left {
-        width: 70%;
-    }
-}
-@media (min-width:1420px) and (max-width:1599px){
-    #events_list ul li{    
-        width: 15%;
-        margin: 2.5%;
-    }
-    #preview_events_a,
-    #events_div li > a {
-        height: 13em;  
-        width: 11em;
-    }
-    #preview_events_left {
-        width: 70%;
-    }
-}
-@media (min-width:1600px) {
-    #events_list ul li{    
-        width: 16%;
-        margin: 2%;
-    }
-    #preview_events_a,
-    #events_div li > a {
-        height: 16em;  
-        width: 12em;
-    }
-    #preview_events_left {
-        width: 70%;
-    }
-}
+
 label {
     font-weight: bold;
     font-size: 12px;
@@ -588,7 +506,7 @@ ul li h2 {
     padding-top: 10px;
 }
 
-#friends_div li a,
+.friends_div li a,
 #reads_div li a,
 #book_div li a,
 #know_div li a {

@@ -139,10 +139,10 @@
 }
 
 /* baidu ads */
-#wrapper_wrapper #container #content_left div[class^='_'] {
+/* #wrapper_wrapper #container #content_left div[class^='_'] {
     position: fixed;
     left: -9999px;
-}
+} */
 
 #wrapper_wrapper #container #content_right {
     display: none !important;

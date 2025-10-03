@@ -1,8 +1,8 @@
 {
     "name": "爱读v2",
-    "version": "2.6.2",
+    "version": "2.6.4",
     "description": "简化网页提供读书般的体验，本插件无任何收益，仅用于体验交流!",
-    "homepage_url": "https://handbooks.cn:18080/iread/",
+    "homepage_url": "https://blog.csdn.net/Simbaba/article/details/135042516",
     "icons": {
         "128": "images/iread_128.png",
         "16": "images/iread_16.png",
@@ -135,6 +135,9 @@
             "*://*.jb51.net/shouji/*",
             "*://*.jb51.net/diannaojichu/*",
             "*://*.jb51.net/news/*",
+            "*://*.jb51.net/database/*",
+            "*://*.jb51.net/python/*",
+            "*://*.jb51.net/server/*",
             "*://*.jb51.net/hardware/*",
             "*://csdnnews.blog.csdn.net/article/*",
             "*://*.jianshu.com/p/*",

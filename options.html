@@ -3,14 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="plugin/options.css" />
-    <link rel="stylesheet" type="text/css" href="plugin/calendar.css" />
 </head>
 
 <body>
     <div id="headerbar">
         <div id="qrcode"></div>
         <div id="header">
-            <a id="brand" target="_blank" href='https://handbooks.cn:18080/iread/'>爱·读</a>
+            <a id="brand" target="_blank">爱·读</a>
         </div>
         <div id="description">QQ:709663594 - 简单·高效·随心</div>
     </div>
@@ -24,10 +23,6 @@
             <div id="bgcolor_setting">
                 <label>1. 背景设置(刷新生效)</label>
                 <div id="buttonDiv"></div>
-            </div>
-            <div style="margin-bottom: 1em; margin-top: 1em;">
-                <label style="text-decoration: underline;">访问次数</label>
-                <h1 id="visit_count" style="color: green;"></h1>
             </div>
             <div id="logo_setting">
                 <label>2. 切换LOGO</label>
@@ -55,51 +50,11 @@
                 <div id="web_enable_list" class="webopt">
                 </div>
             </div>
-            <div id="friends_link">
-                <label>友情链接</label>
-                <ul id="friends_div" class="webopt">
-                    <li><a href="https://weread.qq.com/" target="_blank">微信读书</a></li>
-                    <li><a href="https://book.douban.com/" target="_blank">豆瓣读书</a></li>
-                    <li><a href="http://www.360doc.com/" target="_blank">360个人图书馆</a></li>
-                    <li><a href="https://www.jiumodiary.com/" target="_blank">鸠摩搜索</a></li>
-                    <li><a href="http://www.banshujiang.cn/" target="_blank">搬书匠</a></li>
-                    <li><a href="https://sobooks.net/" target="_blank">书柜</a></li>
-                    <li><a href="https://www.qidian.com/" target="_blank">起点中文</a></li>
-                </ul>
-            </div>
-            <div class="container">
-                <div class="today">
-                </div>
-                <div class="line-tip">
-                    <strong>座位朝向：<br>
-                    </strong>面向<span class="direction_value"></span>写程序，BUG 最少。
-                </div>
-                <div class="line-tip">
-                    <strong>今日宜饮：<br></strong><span class="drink_value"></span>
-                </div>
-                <div class="line-tip">
-                    <strong>女神亲近指数：</strong><span class="goddes_value"></span>
-                </div>
-            </div>
-            <div id="girls_link">
-                <label>随机美图</label>
-                <img src="https://api.suyanw.cn/api/sjmv.php"/>
-            </div>
         </div>
         <div style="flex:9;margin-left: 2%;">
             <div id="recommend_app">
-                <a id="hot_section_title" style="padding: 10px" class="select">热点新闻</a>
-                <a id="app_section_title" style="padding: 10px">实用推荐</a>
-                <!-- <a id="sim_section_title" style="padding: 10px">式奋努力</a> -->
                 <a id="blog_section_title" style="padding: 10px">来算一卦</a>
                 <hr style="border:0.5px solid lightgray">
-                <ul id="hot_news_div"></ul>
-                <ul id="app_div"></ul>
-                <!-- <ul id="sim_hard_div">
-                    <li><a>假装编译</a></li>
-                    <li><a>假装开会</a></li>
-                    <li><a>假装学习</a></li>
-                </ul> -->
                 <ul id="yaogua_div">
                     <li style="width:100%">
                         <div id="yaogua_head">
@@ -144,48 +99,26 @@
                     </div>
                 </ul>
             </div>
-            <!-- <div id="reads_list">
-                <label style="padding: 10px 0 10px 10px;">佳作赏析</label>
+            <div id="book_list" class="friends_link">
+                <label style="padding: 10px 0 10px 10px;">友情链接</label>
                 <hr style="border:0.5px solid lightgray">
-                <ul id="reads_div">
-                </ul>
-            </div> -->
-            <div id="book_list">
-                <label style="padding: 10px 0 10px 10px;">推荐图书</label>
-                <hr style="border:0.5px solid lightgray">
-                <ul id="book_div">
-                </ul>
-            </div>
-            <div id="know_list">
-                <label style="padding: 10px 0 10px 10px;">推荐阅读</label>
-                <hr style="border:0.5px solid lightgray">
-                <ul id="know_div">
+
+                <ul id="friends_div" class="webopt">
+                    <li><a href="https://weread.qq.com/" target="_blank">微信读书</a></li>
+                    <li><a href="https://book.douban.com/" target="_blank">豆瓣读书</a></li>
+                    <li><a href="http://www.360doc.com/" target="_blank">360个人图书馆</a></li>
+                    <li><a href="https://www.jiumodiary.com/" target="_blank">鸠摩搜索</a></li>
+                    <li><a href="http://www.banshujiang.cn/" target="_blank">搬书匠</a></li>
+                    <li><a href="https://sobooks.net/" target="_blank">书柜</a></li>
+                    <li><a href="https://www.qidian.com/" target="_blank">起点中文</a></li>
                 </ul>
             </div>
-            <div id="events_list">
-                <label style="padding: 10px 0 10px 10px;">随便翻翻</label>
+            <div id="girls_list">
+                <label style="padding: 10px 0 10px 10px;">随机美图</label>
                 <hr style="border:0.5px solid lightgray">
-                <ul id="events_div"></ul>
+                <img alt="美图" style="margin-top: 10px; max-width: 100%;max-height: 500px;" src="http://api.btstu.cn/sjbz/?lx=suiji"/>
             </div>
-            <div id="events_pub">
-                <label>我也发一贴</label>
-                <button id="pubevents">发布</button>
-                <ul>
-                    <div id="preview_events_left">
-                        <input id="event_title_input" style="width: 100%; margin-bottom: 4px;" 
-                        type="text" placeholder="总的有个标题"/>
-                        <textarea id="event_content_input" type="text" style="min-height: 6.6em;width: 100%;" 
-                            placeholder="随便发点啥，1分钟后即可随机刷到～"></textarea>
-                        <input id="event_cover_input" style="width: 100%; margin-bottom: 4px;" 
-                            type="url" placeholder="封面"/>
-                        <input id="event_link_input" style="width: 100%; margin-bottom: 4px;" 
-                        type="url" placeholder="网址要带着https/http/magnet哦～"/>
-                    </div>
-                    <li style="padding-right: 5%;float: right;">
-                        <a id="preview_events_a" style="text-align:center;float:right;" href="#">预览</a>
-                    </li>
-                </ul>
-            </div>
+            
         </div>
     </div>
     <div id="bottom_tip">
@@ -213,8 +146,6 @@
 <script src="plugin/utils.js"></script>
 <script src="plugin/colors.js"></script>
 <script src="plugin/switches.js"></script>
-<script src="plugin/events.js"></script>
 <script src="plugin/yaogua.js"></script>
-<script src="plugin/calendar.js"></script>
 <script src="options.js"></script>
 </html>

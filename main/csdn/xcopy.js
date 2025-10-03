@@ -14,7 +14,7 @@ function onCopyCode(e) {
     e.preventDefault()
     e.stopPropagation()
     e.target.setAttribute('data-title', "已复制")
-    copyText(e.target.parentNode)
+    copyText(e.target.parentNode.parentNode.firstChild)
 }
 
 if (hljs && hljs.copyCode) {

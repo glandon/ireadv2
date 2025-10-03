@@ -49,6 +49,9 @@
 .iread_fulscr .recommended-links,
 .iread_fulscr .article-suspended-panel,
 .iread_fulscr .category-course-recommend,
+.iread_fulscr .top-banners-container,
+.iread_fulscr article img,
+.iread_fulscr header,
 .iread_fulscr .main-header-box {
     display: none !important;
 }

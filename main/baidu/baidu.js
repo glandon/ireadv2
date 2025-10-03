@@ -1,22 +1,22 @@
 
-chrome.storage.sync.get(['baidusearch'], function(result) {
-    console.log('baidu.js: Value currently is ' + result.baidusearch);
-    if (result.baidusearch || result.baidusearch==undefined) baiduSimple();
-});
+// chrome.storage.sync.get(['baidusearch'], function(result) {
+//     console.log('baidu.js: Value currently is ' + result.baidusearch);
+//     if (result.baidusearch || result.baidusearch==undefined) baiduSimple();
+// });
 
-function baiduSimple() {
-    if (!document.URL.includes("baidu.com/s?")) {
-        return;
-    }
+// function baiduSimple() {
+//     if (!document.URL.includes("baidu.com/s?")) {
+//         return;
+//     }
 
-    if (!document.title.includes("百度搜索")) {
-        return;
-    }
+//     if (!document.title.includes("百度搜索")) {
+//         return;
+//     }
 
-    /**
-     * TODO 更多的优化
-     */
-}
+//     /**
+//      * TODO 更多的优化
+//      */
+// }
 
 
 if (document.URL.includes("baijiahao.baidu.com") || document.URL.includes("mbd.baidu.com")) {
